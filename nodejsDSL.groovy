@@ -13,7 +13,7 @@ job('AplicacionNodejsDSL') {
         nodejs('NodeJSTest')
     }
     steps {
-        shell("npm install")
+        shell("npm i -f ")
     }
     publishers {
 	slackNotifier {
